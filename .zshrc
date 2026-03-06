@@ -13,9 +13,8 @@ bindkey "^[[1;5A" history-beginning-search-backward
 autoload -Uz compinit && compinit
 
 alias ls='eza --icons always'
-# alias cat='bat'
 alias v='nvim'
-alias gemini3='gemini -m gemini-3-pro-preview'
+# alias nvim='nvim --clean --cmd "set notermguicolors"'
 
 export PATH="$HOME/.local/bin:$PATH"
 export EDITOR="nvim"
