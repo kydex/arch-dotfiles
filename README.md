@@ -5,7 +5,7 @@
 ![Wayland](https://img.shields.io/badge/Wayland-000000?style=for-the-badge&logo=wayland&logoColor=white)
 ![Niri](https://img.shields.io/badge/Niri-gray?style=for-the-badge)
 
-![screenshot](./screenshot.png)
+![screenshot](./preview.png)
 
 A collection of my personal dotfiles for a consistent and beautiful Ayu-themed experience on Arch Linux with the Niri compositor.
 
