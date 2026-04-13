@@ -1,13 +1,15 @@
-# My Gruvbox Themed Arch Linux Dotfiles 🎨
+# My Ayu Themed Arch Linux Dotfiles 🎨
 
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Arch](https://img.shields.io/badge/Arch%20Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
 ![Wayland](https://img.shields.io/badge/Wayland-000000?style=for-the-badge&logo=wayland&logoColor=white)
-![Hyprland](https://img.shields.io/badge/Hyprland-00add8?style=for-the-badge)
+![Niri](https://img.shields.io/badge/Niri-gray?style=for-the-badge)
 
 ![screenshot](./screenshot.png)
 
-A collection of my personal dotfiles for a consistent and beautiful Gruvbox-themed experience on Arch Linux with the Hyprland compositor.
+A collection of my personal dotfiles for a consistent and beautiful Ayu-themed experience on Arch Linux with the Niri compositor.
+
+On the fly Light/Dark theme switch included (Experimental).
 
 ## 🚀 Installation
 
@@ -28,46 +30,21 @@ A collection of my personal dotfiles for a consistent and beautiful Gruvbox-them
 
 The script will back up your existing configuration files to `~/.config/filename.bak` and `~/.zshrc.bak` before copying the new files.
 
-## 🖼️ Window Manager: Hyprland
+## 🪟 Window Manager: Niri
 
-[Hyprland](https://hyprland.org/) is a dynamic tiling Wayland compositor that doesn't sacrifice on looks. ✨
+[Niri](https://github.com/YaLTeR/niri) is a scroll-stacking Wayland compositor. It's unique, fast, and highly configurable.
 
-### Keybindings ⌨️
+### Keybindings ⌨️ (Compact)
 
-| Keybinding            | Description                                     |
-| :-------------------- | :---------------------------------------------- |
-| `Super + Shift + Return` | Open terminal                                |
-| `Super + Shift + C`   | Kill active window                              |
-| `Super + Shift + Q`   | Exit Hyprland                                   |
-| `Super + R`           | Open file manager (`ranger`)                    |
-| `Super + F`           | Toggle floating                                 |
-| `Super + Shift + F`   | Toggle fullscreen                               |
-| `Super + D`           | Open application menu (`fuzzel`)                |
-| `Super + Shift + P`   | Pin window                                      |
-| `Super + J`           | Toggle split                                    |
-| `Super + E`           | Open emoji picker (`bemoji`)                    |
-| `Super + V`           | Open clipboard history (`cliphist`)             |
-| `Super + B`           | Reload Waybar config                            |
-| `Super + Shift + B`   | Toggle Waybar visibility                        |
-| `Super + L`           | Lock screen (`hyprlock`)                        |
-| `Super + P`           | Launch hyprpicker                               |
-| `Super + N`           | Open notification center (`swaync`)             |
-| `Super + Shift + O`   | Pass key to OBS                                 |
-| `Print`               | Take screenshot (`grimblast`)                   |
-| `Super + (←,→,↑,↓)`   | Move focus                                      |
-| `Super + Shift + (←,→,↑,↓)` | Swap window                               |
-| `Super + Ctrl + (←,→,↑,↓)`  | Resize window                             |
-| `Super + [1-9]`       | Switch to workspace                             |
-| `Super + Shift + [1-9]` | Move window to workspace                      |
-| `Super + S`           | Toggle special workspace                        |
-| `Super + Shift + S`   | Move window to special workspace                |
-| `F1`                | Mute audio                                      |
-| `F2`         | Decrease volume                                 |
-| `F3`           | Increase volume                                 |
-| `F4`            | Mute microphone                                 |
-| `Super + ]`           | Increase brightness                             |
-| `Super + [`           | Decrease brightness                             |
-| `Super + Mouse`       | Move/Resize window                              |
+| Action | Bind | Action | Bind |
+| :--- | :--- | :--- | :--- |
+| **Terminal** | `Mod+Shift+Enter` | **Close Window** | `Mod+Shift+C` |
+| **App Menu** | `Mod+D` | **Fullscreen** | `Mod+Shift+F` |
+| **Notifications** | `Mod+N` | **Floating** | `Mod+V` |
+| **Lock Screen** | `Alt+Super+L` | **Focus (L/D/U/R)** | `Mod + Arrows` |
+| **Workspace 1-9** | `Mod + 1-9` | **Move Window** | `Mod+Shift + Arrows` |
+| **Overview** | `Mod+O` | **Resize Width** | `Mod + (-/=)` |
+| **Maximize to edges** | `Mod+M` | **Screenshot** | `Print` |
 
 ## 🐚 Shell
 
@@ -107,11 +84,10 @@ The script will back up your existing configuration files to `~/.config/filename
 
 ## 🖥️ Applications configured
 
-- 🚄 **[Alacritty](https://alacritty.org/):** A fast, GPU-accelerated terminal emulator with a Gruvbox theme and JetBrains Mono font.
-- 📊 **[Waybar](https://github.com/Alexays/Waybar):** A highly customizable Wayland bar with Gruvbox themed modules.
+- 🚄 **[Alacritty](https://alacritty.org/):** GPU-accelerated terminal with **Ayu** (Light/Mirage) themes.
+- 📊 **[Waybar](https://github.com/Alexays/Waybar):** Highly customizable bar with dynamic Ayu color schemes.
 - 📨 **[Swaync](https://github.com/ErikReider/SwayNotificationCenter):** A simple notification daemon for Wayland, themed with Gruvbox.
 - 🔒 **[Hyprlock](https://hyprland.org/docs/ecosystem/hyprlock/):** The official screen locker for Hyprland, showing a blurred background and the current time.
 - 📁 **[Ranger](https://github.com/ranger/ranger):** A console file manager with VI key bindings and image previews.
 - 📖 **[Zathura](https://pwmt.org/projects/zathura/):** A highly customizable document viewer with VI-like keybindings and a Gruvbox theme.
-- 🦇 **[Bat](https://github.com/sharkdp/bat):** A `cat(1)` clone with wings, using the `gruvbox-dark` theme for syntax highlighting.
-
+- 🦇 **[Bat](https://github.com/sharkdp/bat):** A `cat(1)` clone with wings for syntax highlighting.

@@ -1,3 +1,5 @@
+@import url("colors.css");
+
 * {
   border: none;
   border-radius: 0px;
@@ -5,13 +7,13 @@
   font-weight: bold;
   font-size: 16px;
   min-height: 0;
-  color: #ebdbb2;
+  color: @fg;
   margin: 0;
   padding: 0;
 }
 
 window#waybar {
-  background: #1d2021;
+  background: @bg;
 }
 
 /* Workspace Buttons */
@@ -20,15 +22,15 @@ window#waybar {
 }
 
 #workspaces button.active label {
-  color: #1d2021;
+  color: @bg;
 }
 
 #workspaces button:hover {
-  background: #3c3836;
+  background: @hover_bg;
 }
 
 #workspaces button.active {
-  background: #d65d0e;
+  background: @orange;
 }
 
 #clock, #battery, #pulseaudio, #tray, #language, #weather {
@@ -36,37 +38,37 @@ window#waybar {
 }
 
 #language {
-  color: #d79921;
-  border-bottom: 5px solid #d79921;
+  color: @yellow;
+  border-bottom: 5px solid @yellow;
 }
 
 #custom-weather {
-  color: #98971a;
-  border-bottom: 5px solid #98971a
+  color: @green;
+  border-bottom: 5px solid @green;
 }
 
 #pulseaudio {
-  color: #689d6a;
-  border-bottom: 5px solid #689d6a;
+  color: @aqua;
+  border-bottom: 5px solid @aqua;
 }
 
 #pulseaudio.muted {
   padding: 0 20px;
-  color: #cc241d;
-  border-bottom: 5px solid #cc241d;
+  color: @red;
+  border-bottom: 5px solid @red;
 }
 
 #battery {
-  color: #458588;
-  border-bottom: 5px solid #458588;
+  color: @blue;
+  border-bottom: 5px solid @blue;
 }
 
 #clock {
-  color: #b16286;
-  border-bottom: 5px solid #b16286;
+  color: @purple;
+  border-bottom: 5px solid @purple;
 }
 
 #tray {
-  color: #d65d0e;
-  border-bottom: 5px solid #d65d0e;
+  color: @orange;
+  border-bottom: 5px solid @orange;
 }

@@ -1,3 +1,5 @@
+include "theme.kdl"
+
 // Input device configuration.
 input {
   keyboard {
@@ -92,28 +94,26 @@ layout {
   // Alternatively, you can override it with a window rule called
   // `draw-border-with-background`.
 
-  // You can change how the focus ring looks.
   focus-ring {
     off
     width 5
-    inactive-color "#3c3836"
-    active-gradient from="#d65d0e" to="#98971a" angle=135
+    active-gradient from="#eba54d" to="#80ab24" angle=135
   }
 
-  // You can also add a border. It's similar to the focus ring, but always visible.
   border {
-    // off
     width 5
-    inactive-color "#3c3836"
-    active-gradient from="#d65d0e" to="#98971a" angle=135
-    urgent-color "#cc241d"
+    active-gradient from="#eba54d" to="#80ab24" angle=135
+    urgent-color "#e7666a"
   }
+
+
 
   // You can enable drop shadows for windows.
   shadow {
     off
   }
 }
+
 
 spawn-at-startup "hypridle"
 spawn-at-startup "swww-daemon"
@@ -143,7 +143,7 @@ animations {
   // slowdown 3.0
 
   workspace-switch {
-    spring damping-ratio=0.8 stiffness=1000 epsilon=0.0001
+    spring damping-ratio=1.0 stiffness=1000 epsilon=0.0001
   }
 
   window-open {
@@ -158,15 +158,15 @@ animations {
   }
 
   horizontal-view-movement {
-    spring damping-ratio=0.8 stiffness=800 epsilon=0.0001
+    spring damping-ratio=1.0 stiffness=800 epsilon=0.0001
   }
 
   window-movement {
-    spring damping-ratio=0.8 stiffness=800 epsilon=0.0001
+    spring damping-ratio=1.0 stiffness=800 epsilon=0.0001
   }
 
   window-resize {
-    spring damping-ratio=0.8 stiffness=800 epsilon=0.0001
+    spring damping-ratio=1.0 stiffness=800 epsilon=0.0001
   }
 
   config-notification-open-close {
@@ -227,7 +227,7 @@ window-rule {
 }
 
 window-rule {
-  match app-id="showmethekey-gtk"
+  match app-id="one.alynx.showmethekey"
   open-floating true
   open-focused false
   default-floating-position x=990 y=28 relative-to="top-left"
